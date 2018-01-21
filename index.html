@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<title>jQuery文章二维码扫码打赏功能代码</title>
+<title>支付</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script
 			  src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -29,6 +29,21 @@
 	.shang_payselect .pay_item{display:inline-block;margin-right:10px;float:left;}
 	.shang_info{clear:both;}
 	.shang_info p,.shang_info a{color:#C3C3C3;text-align:center;font-size:12px;text-decoration:none;line-height:2em;}
+	.price-now {
+    color: #FF6600;
+    font-size: 18px;
+}
+
+	.price-old {
+    color:#708090;
+    font-size: 15px;
+	text-decoration:line-through;
+}
+
+
+.text-center {
+    text-align: center;
+}
 </style>
 </head>
 
@@ -43,7 +58,7 @@
 	<div class="shang_payimg">
 		<img src="img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
 	</div>
-		<div class="pay_explain">扫码打赏，你说多少就多少</div>
+		<div ><p class="text-center price-old">199元</p> <p class="text-center price-now">99元</p></div>
 	<div class="shang_payselect">
 		<div class="pay_item checked" data-id="alipay">
 			<span class="radiobox"></span>
